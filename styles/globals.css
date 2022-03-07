@@ -1,16 +1,68 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Varela+Round&display=swap');
+
+.heart {
+  animation: animateHeart 1.2s infinite;
+}
+
+
+@keyframes animateHeart {
+  0% {
+    transform:scale(0.8);
+  }
+  5% {
+    transform:scale(0.9);
+  }
+  10% {
+    transform:scale(0.8);
+  }
+  15% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(0.8);
+  }
+  100% {
+    transform:scale(0.8);
+  }
+}
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  background-color: #f44336;
+  height: 100vh
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+.texto {
+  position: absolute;
+  top:5%;
+  left: 15%;
+  width: 70%;
+  height: 10%;
+  text-align: center;
+}
+
+.rodape {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-25%,-25%);
+}
+
+.fim {
+  font-size: 32px
+}
+
+p{
+  font-family: 'Great Vibes', cursive;
+  font-size: 128px;
+  margin: 0;
 }
