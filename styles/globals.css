@@ -58,11 +58,20 @@ body {
 }
 
 .fim {
-  font-size: 12px
+  font-size: 14px
 }
 
 p{
   font-family: 'Great Vibes', cursive;
   font-size: 32px;
   margin: 0;
+}
+
+@media (min-width: 720px) {
+  p{
+    font-size: 64px;
+  }
+  .fim {
+  font-size: 32px;
+  }
 }
